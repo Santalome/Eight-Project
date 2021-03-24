@@ -19,7 +19,7 @@ function displayEmployees(employeeData) {
 
     let employeeHTML = '';
 
-    employeess.forEach((employee, index) => {
+    employees.forEach((employee, index) => {
         let name = employee.name;
         let email = employee.email;
         let city = employee.location.city;
@@ -66,7 +66,6 @@ gridContainer.addEventListener('click', e => {
     if(e.target !== gridContainer){
         const card = e.target.closest(".card");
         const index = card.getAttribute('data-index');
-
         displayModal(index);
     }
 });
